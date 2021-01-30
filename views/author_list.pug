@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+
+  ul.content
+    each author in author_list
+      li.content
+        a(href=author.url) #{author.name}
+        |  DOB: (#{author.date_of_birth_f}) to DOD: (#{author.date_of_death_f})
+        hr
+		
+  ul.content
+    each author in author_list
+      li.content
+        a(href=author.url) #{author.name}
+        |  Lifespan: (#{author.lifespan_f})
+	  
+
+
+  
+  
